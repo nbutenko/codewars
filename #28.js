@@ -1,0 +1,1 @@
+const evensAndOdds = num => num%2 ? num.toString(16) : num.toString(2);

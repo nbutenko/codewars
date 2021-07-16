@@ -1,0 +1,1 @@
+const excludingVatPrice = price => price===null ? -1 : +(price*100/115).toFixed(2);
