@@ -1,0 +1,1 @@
+const inviteMoreWomen = L => L.length/2 > L.filter(el => el===-1).length;
