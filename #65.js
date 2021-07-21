@@ -1,0 +1,1 @@
+const maxDiff = list => list.length > 1 ? Math.max(...list) - Math.min(...list) : 0;
