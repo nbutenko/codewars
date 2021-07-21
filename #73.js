@@ -1,0 +1,1 @@
+const holycats = input => input.filter(el => el !== 'wicked' && el !== 'normal');
