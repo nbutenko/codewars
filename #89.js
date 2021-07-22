@@ -1,0 +1,1 @@
+const consecutive = (arr, a, b) => arr.indexOf(a) === arr.indexOf(b)+1 || arr.indexOf(a) === arr.indexOf(b)-1;

@@ -1,0 +1,1 @@
+let find=(array,e)=>array.indexOf(e)>=0?array.indexOf(e):'Not found'
