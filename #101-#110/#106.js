@@ -1,0 +1,1 @@
+const digitize = n => Array(...n.toString()).reverse().map(el => +el);

@@ -1,0 +1,1 @@
+const findDup = arr => arr.filter((el, index) => index !== arr.indexOf(el))[0];
