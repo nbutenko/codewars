@@ -1,0 +1,1 @@
+const inAscOrder = arr => arr.every((el, index) => index === 0 || el > arr[index-1])

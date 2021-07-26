@@ -1,0 +1,1 @@
+smallEnough=(a,l)=>!a.find(i=>i>l)
