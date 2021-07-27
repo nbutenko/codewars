@@ -1,0 +1,1 @@
+const toFreud = string => string.length ? string.split(' ').map(el => el = 'sex').join(' ') : '';

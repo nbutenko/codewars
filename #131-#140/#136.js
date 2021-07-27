@@ -1,0 +1,1 @@
+const sumSquares = array => array.reduce((acc, curr) => acc+Math.pow(curr, 2), 0);
