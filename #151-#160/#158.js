@@ -1,0 +1,1 @@
+var arrayLeaders = numbers => numbers.filter((el,index) => el > numbers.slice(index+1, numbers.length).reduce((a,b) => a+b,0));
