@@ -1,0 +1,1 @@
+const lowercaseCount = str => [...str].filter(el => [...'abcdefghijklmnopqrstuvwxyz'].includes(el)).length;
