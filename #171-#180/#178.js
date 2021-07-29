@@ -1,0 +1,1 @@
+const testit = s => !s.length ? '' : s.length === 1 ? s.toUpperCase() : s.split(' ').map(el => el.slice(0,el.length-1)+el[el.length-1].toUpperCase()).join(' ');

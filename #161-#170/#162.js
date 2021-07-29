@@ -1,0 +1,1 @@
+const tripleTrouble = (one, two, three) => [...one].map((el, index) => el+two[index]+three[index]).join('');

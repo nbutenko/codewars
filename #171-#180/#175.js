@@ -1,0 +1,1 @@
+const capitals = word => word.split('').map((el, index) => el.toUpperCase() === el ? index : el).filter(el => typeof el === 'number');

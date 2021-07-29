@@ -1,0 +1,1 @@
+const swap = str => str.split('').map(el => el.toUpperCase() === el ? el.toLowerCase() : el.toUpperCase()).join('');
