@@ -1,0 +1,1 @@
+const timeConvert = num => num > 0 ? Math.floor(num/60).toString().padStart(2,'0').concat(':', (num % 60).toString().padStart(2,'0')) : '00:00';

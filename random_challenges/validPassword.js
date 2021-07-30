@@ -1,0 +1,1 @@
+const validPassword = password => password.padEnd(7, '$');
