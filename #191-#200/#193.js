@@ -1,0 +1,1 @@
+const position = letter => `Position of alphabet: ${'abcdefghijklmnopqrstuvwxyz'.indexOf(letter) + 1}`;

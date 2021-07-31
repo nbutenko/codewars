@@ -1,0 +1,1 @@
+const tripleX = str => str[str.indexOf('x')+1] === 'x' && str[str.indexOf('x')+2] === 'x';

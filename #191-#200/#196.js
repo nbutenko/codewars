@@ -1,0 +1,1 @@
+const firstToLast = (str,c) => str.search(c) >= 0 ? str.lastIndexOf(c) - str.indexOf(c) : -1;
