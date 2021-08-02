@@ -1,0 +1,1 @@
+const trim = (str, size) => str.length <= size ? str : str.length <=3 ? str.slice(0,size)+'...' : str.slice(0,size-3)+'...';
