@@ -1,0 +1,1 @@
+const findLongest = str => Math.max(...str.split(' ').map(el => el.length));

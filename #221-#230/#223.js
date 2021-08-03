@@ -1,0 +1,1 @@
+const vowelStart = str => str.toLowerCase().replace(/[_\W]/g, '').replace(/[aeuio]/g, el => ' '+el).trim();
