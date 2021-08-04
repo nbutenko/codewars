@@ -1,0 +1,1 @@
+const product = s => s.split('').filter(el => el === '!').length * s.split('').filter(el => el === '?').length

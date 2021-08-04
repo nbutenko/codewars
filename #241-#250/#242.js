@@ -1,0 +1,1 @@
+const reverseBits = n => parseInt(n.toString(2).split('').reverse().join(''), 2);

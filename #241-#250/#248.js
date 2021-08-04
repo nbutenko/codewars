@@ -1,0 +1,1 @@
+const fix = paragraph => paragraph.length ? paragraph.split('. ').map(el => el[0].toUpperCase() + el.slice(1)).join('. ') : '';

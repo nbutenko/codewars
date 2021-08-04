@@ -1,0 +1,1 @@
+const initializeNames = name => name.split(' ').map((el, index, array) => [0,array.length-1].includes(index) ? el : el[0]+'.').join(' ');

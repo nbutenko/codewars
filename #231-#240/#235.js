@@ -1,0 +1,1 @@
+const isMatching = (string, str1, str2) => string.toLowerCase().replace(/\s/g, '').split('').sort().join('') === (str1+str2).toLowerCase().replace(/\s/g, '').split('').sort().join('');

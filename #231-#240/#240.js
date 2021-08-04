@@ -1,0 +1,1 @@
+const determineTime = durations => durations.length ? durations.map(el => +el.split(':').map((e, i) => i === 0 ? +e * 3600 : i === 1 ? +e * 60 : +e).reduce((a, b) => a+b)).reduce((a, b) => a+b) <= 24*3600 : true;

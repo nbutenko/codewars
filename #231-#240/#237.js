@@ -1,0 +1,1 @@
+const reverser = sentence => sentence.split(' ').map(el => el.split('').reverse().join('')).join(' ');

@@ -1,0 +1,1 @@
+const tidyNumber = n => +n.toString().split('').sort((a,b) => a-b).join('') === n;
