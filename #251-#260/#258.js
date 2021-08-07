@@ -1,0 +1,1 @@
+const countWins = (winnerList, country) => winnerList.filter(el => el.country === country).length;

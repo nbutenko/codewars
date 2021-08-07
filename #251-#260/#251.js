@@ -1,7 +1,7 @@
 function superBrain(sequence,operations){
 
     // ADD x y n
-    const ADD = (arr, oper) => {
+    const add = (arr, oper) => {
         const start = +oper[1];
         const end = +oper[2];
         const incr = +oper[3];
@@ -9,14 +9,15 @@ function superBrain(sequence,operations){
     }
 
     // REVERSE x y
-    const REVERSE = (arr, oper) => {
-        const a = +oper[1];
-        const b = +oper[2];
-        return arr.map((el, index) => index === a-1 ? arr[b-1] : index === b-1 ? arr[a-1] : el);
+    const reverse = (arr, oper) => {
+        const start = +oper[1];
+        const end = +oper[2];
+        let subReverse = arr.filter((el, index) => index >= start-1 && index < end).reverse();
+        return arr.slice(0, start-1).concat(subReverse, arr.slice(end));
     }
 
     // REVOLVE x y n
-    const REVOLVE = (arr, oper) => {
+    const revolve = (arr, oper) => {
         const start = +oper[1];
         const end = +oper[2];
         const step = +oper[3];
@@ -28,20 +29,20 @@ function superBrain(sequence,operations){
     }
 
     // INSERT x n
-    const INSERT = (arr, oper) => {
+    const insert = (arr, oper) => {
         const before = +oper[1];
         const insert = +oper[2];
         return arr.slice(0, before-1).concat(insert, arr.slice(before-1));
     }
 
     // DELETE x
-    const DELETE = (arr, oper) => {
+    const del = (arr, oper) => {
         const n = +oper[1];
         return arr.filter((el, index) => index !== n-1);
     }
 
     // MIN x y
-    const MIN = (arr, oper) => {
+    const min = (arr, oper) => {
         const start = +oper[1];
         const end = +oper[2];
         let sub = arr.filter((el, index) => index >= start-1 && index < end);
@@ -51,25 +52,12 @@ function superBrain(sequence,operations){
     for(let i = 0;i<operations.length;i++){
         let temp = operations[i].split(' ');
         switch(temp[0]){
-            case 'ADD':
-                sequence = ADD(sequence, temp);
-                break;
-            case 'REVERSE':
-                sequence = REVERSE(sequence, temp);
-                break;
-            case 'REVOLVE':
-                sequence = REVOLVE(sequence, temp);
-                break;
-            case 'INSERT':
-                sequence = INSERT(sequence, temp);
-                break;
-            case 'DELETE':
-                sequence = DELETE(sequence, temp);
-                break
-            case 'MIN':
-                sequence = MIN(sequence, temp);
-                break;
-        }
+            case 'ADD': sequence = add(sequence, temp); break;
+            case 'REVERSE': sequence = reverse(sequence, temp); break;
+            case 'REVOLVE': sequence = revolve(sequence, temp); break;
+            case 'INSERT': sequence = insert(sequence, temp); break;
+            case 'DELETE': sequence = del(sequence, temp); break
+            default: sequence = min(sequence, temp);        }
     }
     return sequence;
 }

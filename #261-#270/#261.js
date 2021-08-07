@@ -1,0 +1,1 @@
+const checkThreeAndTwo = array => array.map(el => array.filter(e => e === el).length).filter(el => el === 2 || el === 3).length === array.length

@@ -1,0 +1,1 @@
+const makeBackronym = string => string.toUpperCase().split('').map(el => dict[el]).join(' ')
