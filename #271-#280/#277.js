@@ -1,0 +1,1 @@
+const sentence = list => list.map(el => Object.entries(el)[0]).map(el => [+el[0], el[1]]).sort((a, b) => a[0] - b[0]).map(el => el[1]).join(' ');
