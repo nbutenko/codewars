@@ -1,0 +1,1 @@
+const calculate = (...args) => (...args2) => [...args, ...args2].reduce((a,b) => a+b)
